@@ -1,0 +1,997 @@
+@import "vars"
+
+
+//start global style
+body
+    font-family: $main-font
+    font-size: 4.29vw 
+    color: #fff
+    font-weight: 400
+    background: $bg-color
+    margin: 0 
+    padding: 0
+.body--secondary
+    background: #0E0B07
+.container 
+    width: 91.957vw
+    margin-left: auto 
+    margin-right: auto
+.h1 
+    text-align: center
+    font-size: 9.7vw
+    font-style: italic
+    font-weight: 700
+    line-height: 1
+    margin-top: 0 
+    margin-bottom: 0
+    span 
+        display: block
+        color: $blue
+h1 
+    margin-top: 0 
+    margin-bottom: 0
+.h2 
+    font-size: 10.724vw
+    font-weight: 700
+    font-style: italic
+    line-height: 1
+    margin-top: 0
+    margin-bottom: 0
+p 
+    font-size: 4.826vw
+    font-weight: 600
+    margin-top: 0
+    margin-bottom: 0
+.button 
+    background: #fff
+    display: flex 
+    align-items: center 
+    justify-content: center
+    width: 74.531vw
+    height: 13.673vw
+    margin-left: auto 
+    margin-right: auto
+    border-radius: 20vw
+    text-decoration: none
+    color: $blue
+    font-weight: 900
+    font-size: 4.826vw
+    background: linear-gradient(to bottom, #6CC3FF, #0077B5)
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+    color: #fff
+.button__icon
+    margin-left: 2vw
+    position: relative
+    top: 0.7vw
+    img 
+        width: 8.043vw
+        height: 8.043vw
+.button__icon-num
+    position: absolute
+    top: 0
+    right: 0
+    background: #FF8C04
+    color: #fff
+    font-size: 2.493vw
+    width: 4.021vw
+    height: 4.021vw
+    border-radius: 50% 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    transform: translateX(35%) translateY(-30%)
+.h3 
+    font-size: 5.867vw
+    font-weight: 800
+    text-align: center
+    margin-top: 0 
+    margin-bottom: 0
+.button--white
+    background: #fff
+    color: $blue
+    box-shadow: none
+//end global style
+
+//start header style
+.header
+    padding-top: 7vw
+    padding-bottom: 10vw
+.logo 
+    margin-left: auto 
+    margin-right: auto
+    display: block
+    width: 57.105vw
+    img 
+        width: 100%
+//end header style
+
+//start main screen style 
+.main-screen__content
+    background: $gradient
+    margin-top: 32vw
+    border-radius: 5.898vw
+    padding-bottom: 6.971vw
+    text-align: center
+    padding-left: 3.485vw
+    padding-right: 3.485vw
+.photos-row
+    display: flex
+    justify-content: center
+    position: relative
+    top: -6.667vw
+.photo 
+    object-fit: cover 
+    object-position: center
+    border: 1.877vw solid #F84C23
+    border-radius: 50%
+    background: #F84C23
+.photo1
+    width: 39.142vw
+    height: 39.142vw
+.photo2 
+    width: 42.895vw
+    height: 42.895vw
+.photo-item--2
+    transform: rotate(12.84deg) translateX(-8vw)
+    position: relative
+.photo-item--1
+    transform: rotate(-6.72deg) translateX(8vw)
+    position: relative
+    .name-wrapper 
+        background: #F32E3E
+.photo-item--2
+    .name-wrapper
+        background: #FF3720
+.main-screen 
+    p 
+        margin-top: 4.29vw
+        margin-bottom: 4.29vw
+.main-screen__content-wrapper
+    margin-top: -5vw
+.name-wrapper
+    position: absolute
+    top: 0
+    left: 50% 
+    transform: translateX(-53%) translateY(-150%)
+    display: flex
+    white-space: nowrap
+    font-size: 4.8vw
+    line-height: 1
+    display: flex
+    align-items: center
+    padding-left: 3vw 
+    padding-right: 3vw
+    padding-top: 1vw 
+    padding-bottom: 1vw
+    border-radius: 10vw
+    img 
+        width: 4.8vw
+        height: auto
+        display: block 
+        margin-left: 1.333vw
+.photo-item--2
+    .name-wrapper
+        background: #FF3620
+        transform: translateX(-40%) translateY(-120%)
+//end main screen style 
+
+//start items section style
+.items-section
+    padding-top: 17.067vw
+    padding-bottom: 10vw
+.item
+    background: linear-gradient(137.55deg, #191829 27.03%, #892237 121.72%)
+    border-radius: 5.333vw
+    margin-bottom: 5.333vw
+    padding-top: 6.667vw
+    padding-left: 6.667vw
+    padding-right: 6.667vw
+
+
+
+.item__image
+    width: 65.067vw
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    margin-top: 3vw
+.item__image--lg
+    width: 100%
+    margin-top: 12vw
+.item--lg
+    padding-bottom: 18.6vw
+.button--orange
+    background: linear-gradient(#EB7328, #FF3720)
+    color: #fff
+    width: 100%
+//end items section style
+
+//start benefits style
+.benefits
+    text-align: center
+    padding-bottom: 16vw
+.benefits__icon-wrapper
+    width: 16vw
+    height: 16vw
+    border-radius: 50% 
+    background: $gradient
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-left: auto 
+    margin-right: auto
+    margin-bottom: 4.267vw 
+    border: 2px solid rgba(#4C4B55, .8)
+    box-shadow: 2px 2px 4px rgba(246, 60, 36, 0.13), 12px 15px 34px rgba(247, 71, 32, 0.23)
+    img
+        max-width: 70%
+        max-height: 70%
+.benefits__item
+    margin-top: 8vw
+.benefits__title
+    font-size: 6.4vw
+    font-weight: 800
+//end benefits style
+
+//start review section
+.review
+    .h2
+        margin-bottom: 8vw
+        text-align: center
+.review__item
+    background: #F12C43
+    margin-top: 1.867vw
+    border-radius: 4.267vw
+    padding: 4.2vw 3.2vw
+    padding-bottom: 5vw
+.review__item:nth-child(even)
+    background: #FF3B25
+.review__author-wrapper
+    display: flex 
+    align-items: center
+    img 
+        width: 14px
+        display: block 
+        margin-right: 2vw
+.review__author
+    display: flex 
+    align-items: center
+.review__date
+    opacity: 0.6 
+    margin-left: 2vw
+.review__text
+    font-size: 5.333vw
+    margin-top: 3vw
+    font-weight: 600
+    line-height: 1.2
+.review__item-img
+    width: 22.4vw
+    height: 22.4vw
+.stars-img
+    display: block 
+    margin-top: 1.87vw
+//end review section
+
+//start cta style
+.cta
+    text-align: center
+    padding-top: 6.667vw
+    .button 
+        margin-top: 6.4vw
+//end cta style
+
+//start footer style
+.footer 
+    padding-top: 17.067vw
+    padding-bottom: 25vw
+.footer__link
+    display: block 
+    color: $orange 
+    text-decoration: none
+    text-align: center
+    padding-bottom: 4.267vw
+    background: linear-gradient(135.19deg, #FF3720 15.85%, #EB2852 92.58%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    font-weight: 700
+.footer__bottom
+    display: flex 
+    align-items: center 
+    justify-content: center 
+    opacity: 0.5
+    border-top: 1px solid #fff
+    padding-top: 7.2vw
+    margin-top: 7.2vw
+    padding-bottom: 4.27vw
+    span 
+        padding-left: 0.533vw
+        padding-right: 0.533vw
+.footer__bottom-link
+    color: #fff
+    text-decoration: none
+.footer__bottom-link:hover 
+    color: #fff
+.footer__copy 
+    color: rgba(#fff, .5)
+//end footer style
+
+//start fixed button 
+.fixed-button-wrapper 
+    position: fixed 
+    bottom: 0 
+    left: 0 
+    width: 100%
+    padding-bottom: 2vw
+    z-index: 99
+    .button 
+        width: 100%
+//end fixed button 
+
+//start get vip style
+.get-vip .header
+    padding-top: 20px 
+    padding-bottom: 29px
+    margin-bottom: 29px
+    text-align: center
+    background: linear-gradient(135.19deg, #FF3720 15.85%, #EB2852 92.58%)
+.get-vip .logo
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    text-decoration: none
+    width: 100%
+    font-style: italic
+    img 
+        width: 36px 
+.get-vip .logo a 
+    text-decoration: none
+.get-vip 
+    h1 
+        font-size: 32px 
+        color: #fff 
+        text-decoration: none
+        font-weight: 800
+.premium-wrapper
+    h2 
+        text-align: center
+        margin-top: 0 
+        margin-bottom: 0
+        font-size: 30px 
+        font-weight: 800
+        font-style: italic
+        line-height: 1
+        margin-bottom: 20px
+.sub-title
+    text-align: center
+    font-size: 18px
+    font-weight: 600
+    margin-bottom: 30px
+.list-title
+    font-size: 18px
+    font-weight: 800
+    margin-bottom: 16px
+.premium__list
+    margin-left: 0
+    padding-left: 0
+    list-style: none
+    padding-bottom: 100px
+    li 
+        font-size: 18px 
+        font-weight: 600 
+        padding-left: 25px
+        padding-top: 8px 
+        padding-bottom: 8px
+        position: relative
+    li:before 
+        content: ''
+        position: absolute 
+        top: 12px
+        left: 0 
+        width: 16px 
+        height: 16px 
+        background-color: #F12540
+        background-image: url('../img/tick.svg')
+        background-repeat: no-repeat 
+        background-position: center
+        border-radius: 50%
+.next-button-wrapper
+    position: fixed 
+    bottom: 32px
+    left: 0 
+    width: 100%
+    .button 
+        width: 91.467vw
+        border-radius: 12px
+        background: linear-gradient(135.19deg, #FF3720 15.85%, #EB2852 92.58%)
+        color: #fff
+        font-size: 18px 
+        height: 60px
+        a 
+            color: #fff 
+            text-decoration: none
+            
+.title-text
+    font-size: 30px 
+    line-height: 1
+    font-weight: 800
+    font-style: italic
+    margin-bottom: 20px
+    display: block
+//end get vip style
+
+//start plans style
+.content__header-text
+    text-align: center 
+    margin-left: auto 
+    margin-right: auto
+.content__header:nth-child(2)
+    display: flex 
+    justify-content: center
+.content__header:nth-child(2) .content__header-text
+    background: #fff
+    color: #F52F3A
+    font-size: 18px 
+    font-weight: 900
+    padding: 7px 16px
+    border-radius: 30px
+    margin-bottom: 30px
+.get-vip .item 
+    background: #fff
+    border-radius: 10px
+    padding: 13px 16px
+    color: #0E0B07
+    position: relative
+    font-size: 18px 
+    font-weight: 600
+    margin-bottom: 28px
+.get-vip .item .best-price
+    position: absolute 
+    top: 0 
+    right: 16px
+    background: #F16025
+    color: #fff
+    transform: translateY(-50%)
+    font-size: 12px 
+    font-weight: 600
+    padding: 5px 10px
+    padding-top: 3px 
+    padding-bottom: 4px
+    border-radius: 4px
+    line-height: 1
+.get-vip .item__footer
+    position: absolute 
+    bottom: 0 
+    left: 0
+    color: #fff
+    transform: translateY(115%)
+    font-size: 12px
+.get-vip
+    .item__content-footer
+        display: flex 
+        justify-content: space-between
+        margin-top: 3px
+    .items-list
+        margin-bottom: 70px
+.item__price
+    font-weight: 700 
+.old-price 
+    text-decoration: line-through
+.get-vip .item.active
+    background: #F12540 
+    color: #fff
+    .best-price
+        background: #fff
+        color: #F12540
+.cancle-link 
+    text-align: center
+    margin-left: auto 
+    margin-right: auto
+    display: block
+    margin-top: 23px
+    color: rgba(#FEFAF5, 0.5)
+    font-weight: 900
+    text-decoration: none
+.payment-complete
+    .premium__list
+        display: flex
+        justify-content: space-between
+        position: relative
+        padding-bottom: 0
+    .premium__list li:before
+        display: none
+    .premium__list li
+        padding: 0
+        background: #F12540
+        width: 48%
+        text-align: center 
+        justify-content: center 
+        align-items: center
+        display: flex
+        height: 143px
+        font-size: 22px
+        font-weight: 800
+        border-radius: 8px
+.plus 
+    width: 40px
+    height: 40px 
+    background: #fff 
+    border-radius: 50%
+    position: absolute 
+    top: 50% 
+    left: 50% 
+    transform: translateY(-50%) translateX(-50%)
+    z-index: 2
+    color: $orange
+    display: flex 
+    justify-content: center 
+    align-items: center
+    img 
+        width: 16px
+.discount
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    font-size: 17px
+.discount__value
+    display: flex 
+    align-items: center
+    justify-content: flex-end
+    width: 100%
+.discount__value
+    font-size: 18px
+    .through 
+        color: #fff
+        opacity: 0.5
+        text-decoration: line-through
+        margin-right: 14px
+    span 
+        color: $orange
+.title-m 
+    text-align: center
+    font-size: 18px 
+    margin-bottom: 23px
+//end plans style
+
+//start terms content style
+.terms-content
+    background: #fff 
+    color: #000 
+    font-size: 16px
+    padding-top: 60px
+    padding-bottom: 80px
+    p 
+        font-size: 16px
+        margin-bottom: 15px
+.get-vip .header.header--terms 
+    margin-bottom: 0
+.sub-page__title
+    text-align: center
+    font-size: 40px
+    font-weight: 700
+    margin-bottom: 30px
+h3 
+    font-size: 26px
+.agreement-btn
+    background: $orange
+    color: #fff
+    height: 48px
+    margin-left: auto
+    margin-right: auto
+    width: 200px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50px
+    margin-top: 50px
+    cursor: pointer
+.agreement-btn.active
+    background: #1b8127
+.agreement-btn.active:after
+    content: '✓'
+    font-size: 22px
+    font-weight: 700
+    padding-left: 15px
+.cancle-link
+    font-size: 18px
+.next-button-wrapper .button a
+    width: 100% 
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+//end terms content style
+
+.agreement-btn__wrapper
+    position: fixed 
+    bottom: 0 
+    left: 0 
+    width: 100%
+    padding-top: 20px 
+    padding-bottom: 20px
+    background: linear-gradient(rgba(#fff, 0.1), rgba(#fff, 1))
+.benefits--secondary
+    .benefits__icon-wrapper
+        background: linear-gradient(135.19deg, #FF3720 15.85%, #EB7328 92.58%)
+        border: none
+        box-shadow: 2px 2px 4px rgba(246, 60, 36, 0.13), 12px 15px 34px rgba(247, 71, 32, 0.23)
+.review--secondary
+    .review__item
+        background: #F16025
+    .review__item:nth-child(even)
+        background: #FF3B25
+.footer__menu--secondary 
+    display: flex 
+    align-items: center 
+    justify-content: center
+    .footer__link
+        padding-bottom: 0
+        color: #FFC079
+        background: linear-gradient(135.19deg, #FFC079 15.85%, #FFC079 92.58%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+    .dot 
+        width: 2.5px 
+        height: 2.5px 
+        background: #FFC079
+        border-radius: 50%
+        display: block
+        margin-left: 4.27vw
+        margin-right: 4.27vw
+
+//start secondary header
+.header--secondary
+    background: linear-gradient(135.19deg, #FF3720 15.85%, #EB7328 92.58%)
+    border-bottom-right-radius: 5.33vw
+    border-bottom-left-radius: 5.33vw
+    padding-top: 10.67vw
+    text-align: center
+.logo--white
+    width: 66.67vw
+.header-secondary__content 
+    margin-top: 10.67vw
+    margin-bottom: 9.07vw
+.header-secondary__content
+    display: flex
+    justify-content: space-between
+    height: 37.6vw
+.header-photo-item
+    width: 20vw 
+    height: 20vw
+    background: #FF6F3F
+    padding: 0.8vw 
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    box-sizing: border-box
+    position: relative
+    img 
+        width: 100% 
+        height: 100% 
+        object-fit: cover 
+        object-position: center
+        border-radius: 50%
+.header-photo-item:first-child 
+    display: none
+.header-photo-item:nth-child(2) 
+    display: none
+.header-photo-item:nth-child(3)
+    align-self: center
+.header-photo-item:nth-child(4)
+    position: relative
+    top: 9px
+.header-photo-item:nth-child(5)
+    align-self: flex-end
+    width: 28vw
+    height: 28vw
+    padding: 1.07vw
+    background: #FFB386
+.header-photo-item:nth-child(6)
+    align-self: center
+.header-photo-item:nth-child(7)
+    display: none
+.header-photo-item:nth-child(8)
+    display: none
+.header-photo-item__name
+    position: absolute 
+    top: 100%
+    left: 50%
+    transform: translateX(-50%) translateY(-80%)
+    background: #fff
+    color: #FF3720
+    font-size: 2.87vw
+    padding: 0.53vw 3.5vw
+    border-radius: 10vw
+    font-weight: 700
+.header-photo-item__text
+    position: absolute
+    top: 0 
+    left: 50% 
+    transform: translateX(-50%) translateY(-100%)
+    min-width: 26.67vw
+    height: 8vw
+    font-size: 3.2vw
+    background-image: url('../img/bable.svg')
+    background-repeat: no-repeat
+    background-size: 100%
+    color: #FF3720
+    font-weight: 900
+    padding-top: 0.2vw
+.button--secondary
+    margin-top: 6.4vw
+.header--secondary
+    padding-bottom: 15vw
+.users-list
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
+    transform: translateY(-50%)
+.user__item
+    width: 13.5vw
+    height: 13.5vw
+    min-width: 12.53vw
+    margin-left: 1vw
+    margin-right: 1vw
+    background: #FFB963
+    border-radius: 50%
+    box-sizing: border-box
+    padding: 2px
+    display: flex 
+    justify-content: center
+    align-items: center
+    font-weight: 700
+    img 
+        width: 100%
+        border: 2px solid #fff
+        border-radius: 50%
+        box-sizing: border-box
+.user__item--last
+    background: transparent
+    padding: 0.53vw
+    border: 0.53vw solid #FFB963
+    .user__item--content
+        width: 100% 
+        height: 100% 
+        background: #FFB963
+        border-radius: 50% 
+        display: flex 
+        justify-content: center 
+        align-items: center
+        font-size: 3.48vw
+//end secondary header
+
+//start secondary item list
+.secondary-item
+    width: 100% 
+    height: 90.4vw
+    position: relative
+    display: block
+    margin-bottom: 4.27vw
+    padding: 5.33vw 7.2vw
+    box-sizing: border-box
+    display: flex 
+    align-items: flex-end
+    text-decoration: none
+    .h3 
+        position: relative
+        z-index: 1
+        color: #fff 
+        text-align: left 
+        text-decoration: none
+
+    img 
+        position: absolute
+        top: 0 
+        left: 0
+        width: 100% 
+        height: 100% 
+        object-fit: cover
+        object-position: center
+.items-section--secondary
+    padding-top: 5vw
+//end secondary item list
+.fixed-button-wrapper
+    .tg-blue
+        display: none
+.fixed-title
+    display: none
+.back-button
+    display: flex 
+    align-items: center
+    margin-left: auto
+    margin-right: auto
+    border: 1px solid rgba(#fff, 0.4)
+    color: rgba(#fff, .9)
+    text-decoration: none
+    padding: 2.2vw 5.33vw
+    border-radius: 10vw
+    font-size: 4.8vw
+    line-height: 1
+    img 
+        width: 2.17vw
+        display: inline-block
+        margin-right: 3.88vw
+.back-button__wrapper
+    display: flex
+    justify-content: center  
+.about__img-wrapper
+   background: linear-gradient(137.55deg, #191829 27.03%, #892237 121.72%)
+   border-radius: 5.333vw
+   margin-bottom: 6.4vw 
+   margin-top: 6.4vw
+   display: flex 
+   justify-content: center 
+   align-items: flex-end
+   padding-top: 4vw
+   box-shadow: 1px 7px 9.5px rgba(248, 21, 100, 0.13)
+   border: 1px solid #3e2a38
+
+.about__img 
+    width: 64.53vw
+    display: inline-block   
+    margin-left: auto 
+    margin-right: auto  
+.about 
+    padding-top: 32px
+    .h2 
+        text-align: center
+        margin-bottom: 16px
+    p 
+        margin-bottom: 2vw
+.red 
+    color: #FF3D52
+.join-img 
+    width: 100%
+    margin-top: 6.4vw
+    margin-bottom: 6.4vw
+.join-section
+    padding-top: 12.8vw
+    .h2 
+        text-align: center 
+    .button--white
+        width: 100%
+        margin-top: 6.4vw
+.contact-section
+    p 
+        text-align: center
+.contact-section__title
+    font-size: 5.87vw
+    text-align: center
+    font-weight: 600
+    margin-bottom: 10px
+.contact-item
+    background: linear-gradient(137.55deg, #191829 27.03%, #892237 121.72%)
+    box-shadow: 1px 7px 9.5px rgba(248, 21, 100, 0.13)
+    border-radius: 5.33vw
+    display: flex
+    align-items: center
+    padding: 6.4vw 5vw
+    border: 1px solid #3e2a38
+    font-size: 4.8vw
+    font-weight: 800
+    color: #fff 
+    font-weight: 900
+    margin-bottom: 4.27vw
+.contact-item__icon
+    width: 12.8vw
+    height: 12.8vw
+    min-width: 12.8vw
+    display: flex
+    justify-content: center 
+    align-items: center
+    background: linear-gradient(135.19deg, #FF3720 15.85%, #EB2852 92.58%)
+    box-shadow: 1.6px 1.6px 3.2px rgba(246, 60, 36, 0.13), 9.6px 12px 27.2px rgba(247, 71, 32, 0.23)
+    border-radius: 50%
+    margin-right: 16px
+    border: 1px solid #3e2a38
+.contact-list
+    margin-bottom: 10.67vw
+.text-center 
+    text-align: center
+.orange 
+    color: #ED7830
+.mt-5
+    margin-bottom: 6.4vw
+.body--secondary
+    .footer__menu 
+        display: flex 
+        align-items: center
+        justify-content: center
+    .footer
+        a.footer__link
+            background: linear-gradient(135.19deg, #FFC079 15.85%, #FFC079 92.58%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+            padding-bottom: 0
+    .footer-dot 
+        width: 0.67vw
+        height: 0.67vw 
+        border-radius: 50%
+        background: rgba(#FFC079, .5)
+        display: inline-block
+        margin-left: 16px 
+        margin-right: 16px
+.body--secondary
+    .contact-item
+        background: linear-gradient(135.19deg, #FF3720 15.85%, #EB7328 92.58%), linear-gradient(137.55deg, #191829 27.03%, #892237 121.72%)
+        box-shadow: 1px 7px 9.5px rgba(248, 21, 100, 0.13)
+    .contact-item__icon
+        background: #fff
+        border: none
+.header-secondary__content
+    width: 91.957vw
+    margin-left: auto 
+    margin-right: auto
+.header--secondary
+    position: relative
+.header-bg 
+    position: absolute 
+    top: 67vw 
+    left: -19.9vw
+    width: 34.67vw
+.header-bg-2
+    width: 23vw
+    position: absolute
+    top: 55vw
+    right: -8vw
+.success-wrapper
+    padding-top: 15vw
+.premium-wrapper
+    .sub-title 
+        text-align: center
+        font-weight: 800
+.get-vip-photos
+    display: flex 
+    align-items: center
+    justify-content: center
+    margin-bottom: 12px
+    margin-top: 10px
+    .get-vip-photo__item 
+        object-fit: cover 
+        object-position: center
+        border-radius: 50% 
+        overflow: hidden
+    .get-vip-photo__item:first-child 
+        width: 100px
+        height: 100px 
+        z-index: 5
+    .get-vip-photo__item:nth-child(2)
+        width: 66px
+        height: 66px 
+        margin-left: -15px
+        z-index: 4
+        img
+            filter: blur(3px)
+    .get-vip-photo__item:nth-child(3)
+        width: 66px
+        height: 66px 
+        margin-left: -15px
+        z-index: 3
+        img
+            filter: blur(3px)
+    .get-vip-photo__item:nth-child(4)
+        width: 66px
+        height: 66px 
+        margin-left: -15px
+        img
+            filter: blur(3px)
+
+/* Rectangle 5528 */
+
+
+/* Note: backdrop-filter has minimal browser support */
+
+
+@import "media"
+
+
+
