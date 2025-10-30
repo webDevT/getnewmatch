@@ -17,60 +17,67 @@
 
 	<div class="get-vip static">
 <!-- ---------start header------------->
-<div class="header">
+<div class="header header--2">
 	<div class="container">
 		<div class="logo">
 			<a href="https://flirtu.io/">
-				
+				<img src="img/logo-heart.svg" alt="logo">
 				<h1>GetNewMatch</h1>
 
 			</a>
 		</div>
 	</div>
-
 </div>
 <!-- -----------end header---------- -->
 
 <!-- ---------------start content------------ -->
-<div class="content premium-wrapper">
+<div class="content page-wrapper">
 	<div class="container">
-
 		<h2>
+			Congratulations! <br>
+Your gift was sent!
+		</h2>
 
-Special offer! Hurry while discounts last!
-	</h2>
-		<div class="sub-title">
-			Activate vip and save money
+
+		<div class="gift-photo__wrapper">
+			<img src="img/gift-photo.webp" alt="photo" class="gift-photo__image">
+			<img src="img/icon5.webp" alt="icon" class="gift-photo__icon">
 		</div>
 
-		<div class="list-title">
-			With VIP status you will receive:
-
+		<div class="gift-succes__title">
+			<span>Tatiana</span> is happy <br>
+			to receive your gift
 		</div>
-		<ul class="premium__list">
-			<li>Access to the "You Liked" section</li>
-			<li>Unlimited viewing of candidates
-			</li>
-			<li>Access to the "Stories" section filters And More mutual sympathies</li>
-			<li>+ 1,000 coins every month
-			</li>
+
+		
+
+
+		<a href="" class="button button--secondary">
+			Continue Chatting
+			<img src="img/telegram-white.svg" alt="telegram icon">
+		</a>
+		
+
 	
-			<li>Personal technical support
-			</li>
-			<li>No advertising</li>
-		</ul>
-		<div class="next-button-wrapper">
-			<div class="button">
-			<a href="plans.html"><b>👉 GET VIP 👈</b></a>
-		</div>
-		</div>
+		
 
 	</div>
 </div>
 <!-- ---------------end content------------ -->
 	</div>
  
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+  const giftItems = document.querySelectorAll('.gift-item');
 
+  giftItems.forEach(item => {
+    item.addEventListener('click', function () {
+      giftItems.forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+});
+</script>
 	<script src="js/main.js"></script>
 </body>
 </html>
