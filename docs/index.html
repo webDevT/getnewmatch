@@ -136,6 +136,31 @@
         return f;
     }
 
+    // star Function for deferred execution of view query 
+    function sendViewRequestDeferred(clickid, referrer) {
+ 
+        if (window.requestIdleCallback) {
+            requestIdleCallback(function() {
+                send_xhr("GET", "https://go.getnewmatch.com/view?clickid=" + clickid + "&referrer=" + referrer)();
+            }, { timeout: 2000 });
+        } else {
+        
+            if (document.readyState === 'complete') {
+                setTimeout(function() {
+                    send_xhr("GET", "https://go.getnewmatch.com/view?clickid=" + clickid + "&referrer=" + referrer)();
+                }, 1000);
+            } else {
+                window.addEventListener('load', function() {
+                    setTimeout(function() {
+                        send_xhr("GET", "https://go.getnewmatch.com/view?clickid=" + clickid + "&referrer=" + referrer)();
+                    }, 1000);
+                });
+            }
+        }
+    }
+
+	   // end Function for deferred execution of view query 
+
 
     if (!urlParams.get('rtkcid')) {
 
@@ -150,7 +175,7 @@
                             setCookie();
                         }
                         if (sessionStorage.getItem('viewOnce') !== 1) {
-                            send_xhr("GET", "https://go.getnewmatch.com/view?clickid=" + rawData.clickid + "&referrer=" + referrer)();
+                            sendViewRequestDeferred(rawData.clickid, referrer);
                         }
                         if (registerViewOncePerSession) {
                             sessionStorage.setItem('viewOnce', '1')
@@ -164,7 +189,7 @@
                 setCookie();
             }
             if (sessionStorage.getItem('viewOnce') !== 1) {
-                send_xhr("GET", "https://go.getnewmatch.com/view?clickid=" + rtkClickID + "&referrer=" + referrer)();
+                sendViewRequestDeferred(rtkClickID, referrer);
             }
             if (registerViewOncePerSession) {
                 sessionStorage.setItem('viewOnce', '1')
@@ -176,7 +201,7 @@
             setCookie();
         }
         if (sessionStorage.getItem('viewOnce') !== 1) {
-            send_xhr("GET", "https://go.getnewmatch.com/view?clickid=" + rtkClickID + "&referrer=" + referrer)();
+            sendViewRequestDeferred(rtkClickID, referrer);
         }
         if (registerViewOncePerSession) {
             sessionStorage.setItem('viewOnce', '1')
