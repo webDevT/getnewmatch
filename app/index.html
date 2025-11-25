@@ -30,8 +30,7 @@
 	<link rel="preload" as="font" type="font/woff2" href="fonts/mulish-regular.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="fonts/mulish-bold.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="fonts/mulish-extrabold.woff2" crossorigin>
-	<link rel="preconnect" href="https://go.getnewmatch.com">
-	<link rel="dns-prefetch" href="https://go.getnewmatch.com">
+	
 	<link rel="stylesheet" href="css/style.min.css" type="text/css" />
 <!--	<script src="https://telegram.org/js/telegram-web-app.js"></script>-->
  
@@ -432,8 +431,10 @@ src="https://www.facebook.com/tr?id=1238296014689798&ev=PageView&noscript=1"
 						<div class="name-wrapper">
 							Henry
 						</div>
-						<img
-							 src="img/photo1.webp" alt="flag" class="photo1 photo" fetchpriority="high">
+						<picture>
+							<source media="(max-width: 768px)" srcset="img/photo1-mob.webp">
+							<img src="img/photo1.webp" alt="flag" class="photo1 photo" fetchpriority="high">
+						</picture>
 
 					</div>
 
@@ -441,7 +442,10 @@ src="https://www.facebook.com/tr?id=1238296014689798&ev=PageView&noscript=1"
 						<div class="name-wrapper">
 							Emma
 						</div>
-						<img src="img/photo2-2.webp" alt="photo" class="photo2 photo" fetchpriority="high">
+						<picture>
+							<source media="(max-width: 768px)" srcset="img/photo2-2-mob.webp">
+							<img src="img/photo2-2.webp" alt="photo" class="photo2 photo" fetchpriority="high">
+						</picture>
 					</div>
 				</div>
 
@@ -552,28 +556,40 @@ src="https://www.facebook.com/tr?id=1238296014689798&ev=PageView&noscript=1"
 						Rate Your Potential <br>
 						Partner 👍
 					</h3>
-					<img src="img/img1.webp" alt="image" class="item__image" loading="lazy">
+					<picture>
+						<source media="(max-width: 768px)" srcset="img/img1-mob.webp">
+						<img src="img/img1.webp" alt="image" class="item__image" loading="lazy">
+					</picture>
 				</div>
 
 				<div class="item">
 					<h3 class="h3">
 						Get response in a few seconds
 					</h3>
-					<img src="img/img2.webp" alt="image" class="item__image" loading="lazy">
+					<picture>
+						<source media="(max-width: 768px)" srcset="img/img2-mob.webp">
+						<img src="img/img2.webp" alt="image" class="item__image" loading="lazy">
+					</picture>
 				</div>
 
 				<div class="item">
 					<h3 class="h3">
 						Safe Chat in Telegram 🔐
 					</h3>
-					<img src="img/img3.webp" alt="image" class="item__image item__image--lg" loading="lazy">
+					<picture>
+						<source media="(max-width: 768px)" srcset="img/img3-mob.webp">
+						<img src="img/img3.webp" alt="image" class="item__image item__image--lg" loading="lazy">
+					</picture>
 				</div>
 
 				<div class="item item--lg">
 					<h3 class="h3">
 						Find Girls Ready to Flirt or Have Serious Relationship! 😍
 					</h3>
-					<img src="img/img4.webp" alt="image" class="item__image item__image--lg" loading="lazy">
+					<picture>
+						<source media="(max-width: 768px)" srcset="img/img4-mob.webp">
+						<img src="img/img4.webp" alt="image" class="item__image item__image--lg" loading="lazy">
+					</picture>
 				</div>
 
 			</div>
