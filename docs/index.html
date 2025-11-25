@@ -15,6 +15,8 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://go.getnewmatch.com">
+	<link rel="dns-prefetch" href="https://go.getnewmatch.com">
 	
 	<!-- Preload critical resources for faster loading -->
 	<link rel="preload" as="image" href="img/photo1.webp" fetchpriority="high">
@@ -161,30 +163,43 @@
 
 	   // end Function for deferred execution of view query 
 
+   
+    function initTracking() {
+        if (!urlParams.get('rtkcid')) {
 
-    if (!urlParams.get('rtkcid')) {
-
-        if (sessionStorage.getItem('rtkclickid') === 'undefined' || !sessionStorage.getItem('rtkclickid')) {
-            send_xhr("GET", initialSrc + pixelParams)(
-                function () {
-                    if (this.readyState == 4 && this.status == 200) {
-                        rawData = JSON.parse(this.responseText);
-                        rtkClickID = rawData.clickid;
-                        setSessionClickID();
-                        if (ourCookie === null || ourCookie === undefined || ourCookie === 'undefined' || !firstClickAttribution) {
-                            setCookie();
-                        }
-                        if (sessionStorage.getItem('viewOnce') !== 1) {
-                            sendViewRequestDeferred(rawData.clickid, referrer);
-                        }
-                        if (registerViewOncePerSession) {
-                            sessionStorage.setItem('viewOnce', '1')
+            if (sessionStorage.getItem('rtkclickid') === 'undefined' || !sessionStorage.getItem('rtkclickid')) {
+                send_xhr("GET", initialSrc + pixelParams)(
+                    function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            rawData = JSON.parse(this.responseText);
+                            rtkClickID = rawData.clickid;
+                            setSessionClickID();
+                            if (ourCookie === null || ourCookie === undefined || ourCookie === 'undefined' || !firstClickAttribution) {
+                                setCookie();
+                            }
+                            if (sessionStorage.getItem('viewOnce') !== 1) {
+                                sendViewRequestDeferred(rawData.clickid, referrer);
+                            }
+                            if (registerViewOncePerSession) {
+                                sessionStorage.setItem('viewOnce', '1')
+                            }
                         }
                     }
+                );
+            } else {
+                rtkClickID = sessionStorage.getItem('rtkclickid')
+                if (ourCookie === null || ourCookie === undefined || ourCookie === 'undefined' || !firstClickAttribution) {
+                    setCookie();
                 }
-            );
+                if (sessionStorage.getItem('viewOnce') !== 1) {
+                    sendViewRequestDeferred(rtkClickID, referrer);
+                }
+                if (registerViewOncePerSession) {
+                    sessionStorage.setItem('viewOnce', '1')
+                }
+            }
         } else {
-            rtkClickID = sessionStorage.getItem('rtkclickid')
+            rtkClickID = urlParams.get('rtkcid')
             if (ourCookie === null || ourCookie === undefined || ourCookie === 'undefined' || !firstClickAttribution) {
                 setCookie();
             }
@@ -194,19 +209,16 @@
             if (registerViewOncePerSession) {
                 sessionStorage.setItem('viewOnce', '1')
             }
+            setSessionClickID()
         }
+    }
+
+   
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initTracking);
     } else {
-        rtkClickID = urlParams.get('rtkcid')
-        if (ourCookie === null || ourCookie === undefined || ourCookie === 'undefined' || !firstClickAttribution) {
-            setCookie();
-        }
-        if (sessionStorage.getItem('viewOnce') !== 1) {
-            sendViewRequestDeferred(rtkClickID, referrer);
-        }
-        if (registerViewOncePerSession) {
-            sessionStorage.setItem('viewOnce', '1')
-        }
-        setSessionClickID()
+   
+        setTimeout(initTracking, 0);
     }
 
     function setCookie() {
